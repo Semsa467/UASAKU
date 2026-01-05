@@ -1,0 +1,112 @@
+:root {
+    --primary-dark: #0f172a;    /* Midnight Navy */
+    --accent-gold: #fbbf24;     /* Soft Gold */
+    --accent-blue: #38bdf8;     /* Sky Blue */
+    --light-bg: #f8fafc;        /* Slate Light */
+    --text-main: #334155;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-main);
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 80px 0;
+    color: white;
+    border-bottom: 4px solid var(--accent-gold);
+}
+
+.brand-title {
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, #fff, var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ================= NAVBAR ================= */
+.custom-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.custom-nav .nav-link {
+    color: var(--primary-dark) !important;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.custom-nav .nav-link:hover {
+    color: var(--accent-blue) !important;
+    transform: translateY(-2px);
+}
+
+/* ================= SECTION ================= */
+section {
+    padding: 200px 0;
+    min-height: 80vh;
+}
+
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: var(--accent-gold);
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* ================= PROFILE IMAGE ================= */
+.img-profile {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* ================= CARD ================= */
+.card {
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: var(--primary-dark) !important;
+    padding: 60px 0;
+    color: white;
+}
